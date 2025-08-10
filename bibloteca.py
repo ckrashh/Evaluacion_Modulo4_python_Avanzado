@@ -145,17 +145,23 @@ class Bibloteca():
         try:
             with open("Evaluacion_Modulo4/biblioteca.txt", "r", encoding="utf-8") as archivo:
                 for linea in archivo.readlines():
-                    # Dividir la linea en partes
-                    datos = {}
-                    partes = [parte.strip() for parte in linea.split(",")]
-                    # Iterar sobre cada parte y extraer la información
-                    for parte in partes:
-                        clave, valor = parte.split(":", 1)
-                        clave = clave.strip()
-                        valor = valor.strip()
-                        datos[clave] = valor
-                    #guardar todos los datos en una lista
-                    lista_datos.append(datos)
+                    try:
+                        # Dividir la linea en partes
+                        datos = {}
+                        partes = [parte.strip() for parte in linea.split(",")]
+                        # Iterar sobre cada parte y extraer la información
+                        for parte in partes:
+                            clave, valor = parte.split(":", 1)
+                            clave = clave.strip()
+                            valor = valor.strip()
+                            datos[clave] = valor
+                        #guardar todos los datos en una lista
+                        lista_datos.append(datos)
+                    except ValueError:
+                        continue
+                for lista in lista_datos:
+                    if not "Título" in lista or not "Autor" in lista or not "Año de publicación" in lista or not "Estado" in lista:
+                        lista_datos.remove(lista)
             return lista_datos
         except FileNotFoundError:
             return None
