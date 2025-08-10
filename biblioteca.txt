@@ -1,0 +1,4 @@
+Título: Cien años de soledad, Autor: Gabriel García Márquez, Año de publicación: 1949-01-01, Estado: Disponible, Formato: pdf
+Título: 1984, Autor: George Orwell, Año de publicación: 1949-01-01, Estado: Disponible
+Título: El principito", Autor: Antoine de Saint-Exupéry, Año de publicación: 1943-01-01, Estado: Disponible, Formato: pdf
+Título: Matar a un ruiseñor, Autor: Harper Lee, Año de publicación: 1960-01-01, Estado: Disponible
