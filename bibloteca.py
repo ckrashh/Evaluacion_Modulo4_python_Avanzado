@@ -99,7 +99,7 @@ class Bibloteca():
     
     # guarda los datos en un txt
     def guardar_txt(self):
-        with open("Evaluacion_Modulo4/biblioteca.txt", "w", encoding="utf-8") as archivo:
+        with open("biblioteca.txt", "w", encoding="utf-8") as archivo:
             for libro in self.libros:
                 archivo.write(str(libro) + "\n")
         print("\nBiblioteca guardada exitosamente.")
@@ -143,7 +143,7 @@ class Bibloteca():
         lista_datos = []
         # Inicializar un diccionario para almacenar los datos
         try:
-            with open("Evaluacion_Modulo4/biblioteca.txt", "r", encoding="utf-8") as archivo:
+            with open("biblioteca.txt", "r", encoding="utf-8") as archivo:
                 for linea in archivo.readlines():
                     try:
                         # Dividir la linea en partes
