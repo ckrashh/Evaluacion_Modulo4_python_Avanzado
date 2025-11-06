@@ -1,26 +1,11 @@
-# Como ocupar el programa 
-Al iniciar el programa si tienes un archivo llamado bibloteca.txt te cargara todos los datos del archivo
-al programa.
-
-Al ejecutarlo veras 7 opciones
-
-# La primera opcion de crear libro 
-Tendras que ingresar el nombre del libro, el autor del libro, la fecha de emesion en formato AAAA-MM-DD y por ultimo poner si o no, si es formato digital.
-
-# La segunda opcion es eleminar un libro por su titulo
-Tendras que ingresar el titulo del libro que quieres eliminar y si no existe, mandara el mensaje correspondiente.
-
-# La tercera opcion es ver los libros
-Te mostrara todos los libros existentes en la bibloteca.
-
-# La cuarta opcion es buscar un libro por el titulo 
-Tendras que ingresar el titulo del libro que estas buscando y si no existe, mandara un mensaje correspondiente.
-
-# La quinta opcion de marcar un libro como prestado
-Tendras que ingresar el titulo del libro que deseas prestar.
-
-# La sexta opcion es devolver un libro prestado
-Tendras que ingresar el titulo del libro que desas devolver y si ya esta devuelto o no existe, mandara un mensaje correspondiente.
-
-# La septima opcion es para salir del programa
-Saldras del programa y te crear o modificara un archivo con todos los libros de la bibloteca.
+📚 Evaluacion_Modulo4_python_Avanzado🎯 Descripción del ProyectoEste proyecto es la evaluación final del Módulo 4 del Bootcamp de Python Avanzado de Talento Digital. Implementa un sistema de gestión de bibliotecas simple basado en la Programación Orientada a Objetos (POO) en Python.El programa permite a un usuario gestionar libros (físicos y digitales) a través de un menú interactivo, incluyendo funcionalidades como crear, eliminar, buscar y prestar/devolver libros, con persistencia de datos mediante un archivo de texto.✨ Funcionalidades PrincipalesEl programa ofrece un menú de 7 opciones con las siguientes capacidades:Crear Libro: Permite ingresar el título, autor, fecha de emisión (formato AAAA-MM-DD) y especificar si es un libro digital (sí o no).Eliminar Libro: Elimina un libro de la biblioteca buscando por su título.Ver Libros: Muestra una lista de todos los libros existentes en la biblioteca.Buscar Libro: Permite buscar un libro por su título y muestra sus detalles.Marcar como Prestado: Permite cambiar el estado de un libro a "prestado" buscando por su título.Devolver Libro: Permite cambiar el estado de un libro a "disponible" (devuelto) buscando por su título.Salir del Programa: Cierra la aplicación, guardando automáticamente todos los libros en el archivo de persistencia.💻 Tecnologías UtilizadasTecnologíaDescripciónPythonLenguaje principal para el desarrollo del sistema y la lógica de POO.POOUtilizado para estructurar los objetos Libro, LibroDigital y Biblioteca.Manejo de ArchivosImplementación para la persistencia de datos (guardado y carga de libros) usando un archivo .txt.🚀 Estructura del ProyectoEl repositorio está organizado en varios archivos Python que representan la estructura orientada a objetos de la solución:.
+├── bibloteca.py         # Clase principal de la Biblioteca y su lógica de gestión.
+├── libro.py             # Clase base `Libro` con atributos (título, autor, fecha, estado, etc.).
+├── libroDigital.py      # Clase `LibroDigital` que hereda de `Libro`.
+├── main.py              # Punto de entrada del programa y la lógica del menú interactivo.
+├── biblioteca.txt       # Archivo de persistencia de datos (generado o leído al inicio).
+└── README.md            # Este archivo de documentación.
+⚙️ Instalación y UsoPrerrequisitosAsegúrate de tener Python 3.x instalado en tu sistema.InstalaciónClona el repositorio en tu máquina local:Bashgit clone https://github.com/ckrashh/Evaluacion_Modulo4_python_Avanzado.git
+Navega al directorio del proyecto:Bashcd Evaluacion_Modulo4_python_Avanzado
+EjecuciónEjecuta el programa principal desde la terminal:Bashpython main.py
+Carga Inicial: Al iniciar, el programa intentará cargar los datos de la biblioteca desde el archivo biblioteca.txt. Si el archivo no existe, se iniciará con una biblioteca vacía.Menú: Sigue las opciones del menú que se mostrará en la consola para interactuar con la biblioteca.🤝 ContribucionesSi deseas contribuir a este proyecto, por favor considera:Hacer un fork del repositorio.Crear una nueva branch para tus funcionalidades (git checkout -b feature/nueva-funcion).Realizar tus cambios.Enviar un Pull Request detallando las modificaciones.👤 Autorckrashh - Perfil de GitHub📄 LicenciaEste proyecto se distribuye bajo la licencia MIT. Consulta el archivo LICENSE (si lo incluyes) para más detalles.
